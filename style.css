@@ -1,0 +1,22 @@
+html {
+    background: url('images/background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: lightgrey;
+    display: block;
+}
+
+#logo {
+    height: 60px;
+}
+
+body {
+    display: flex;
+    flex-direction: row-reverse;
+    height: 100%;
+}
+
+.header {
+    display: flex;
+    width: 50vw;
+    margin: 10px;
+}
