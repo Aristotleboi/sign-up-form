@@ -4,15 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
     <title>Sign-up Form</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="header">
-        <div>
-            <img id="logo" src="images/logo.png">
+    <div class="header-cred">
+        <div class="header">
+            <div>
+                <img id="logo" src="images/logo.png">
+            </div>
+            <h1>SIGN UP!</h1>
         </div>
-        <h1>SIGN UP!</h1>
+        <p id="photo-credit">Photo by <a href="https://unsplash.com/@karlcatabas">Karl Raymund</a> on <a href="https://unsplash.com/photos/6yFGUCyLgMI">Unsplash</a></p>
     </div>
 
     <div class="form-body">
@@ -25,33 +31,36 @@
             <p>You <em>know</em> you want to.</p>
         </div>
         <div class="form">
-            <div>
-                <label for="first-name">FIRST NAME</label>
-                <input type="text" id="first-name" name="user_first_name">
-            </div>
-            <div>
-                <label for="last-name">LAST NAME</label>
-                <input type="text" id="last-name" name="user_last_name">
-            </div>
-            <div>
-                <label for="mail">EMAIL</label>
-                <input type="email" id="mail" name="user_email">
-            </div>
-            <div>
-                <label for="phone">PHONE NUMBER</label>
-                <input type="tel" id="phone" name="user_phonenumber">
-            </div>
-            <div>
-                <label for="pass">PASSWORD</label>
-                <input type="password" id="pass" name="user_pass">
-            </div>
-            <div>
-                <label for="pass-confirm">CONFIRM PASSWORD</label>
-                <input type="password" name="user_confirm_pass" id="pass-confirm">
-            </div>
+            <p>Let's do this!</p>
+            <form>
+                <div class="first">
+                    <label for="first-name">FIRST NAME</label>
+                    <input type="text" id="first-name" name="user_first_name">
+                </div>
+                <div id="last-name">
+                    <label for="last-name">LAST NAME</label>
+                    <input type="text" id="last-name" name="user_last_name">
+                </div>
+                <div id="email">
+                    <label for="mail">EMAIL</label>
+                    <input type="email" id="mail" name="user_email" required>
+                </div>
+                <div id="phone">
+                    <label for="phone">PHONE NUMBER</label>
+                    <input type="tel" id="phone" name="user_phonenumber">
+                </div>
+                <div id="password">
+                    <label for="pass">PASSWORD</label>
+                    <input type="password" id="pass" name="user_pass" required>
+                </div>
+                <div id="passconfirm">
+                    <label for="pass-confirm">CONFIRM PASSWORD</label>
+                    <input type="password" name="user_confirm_pass" id="pass-confirm">
+                </div>
+            </form>>
         </div>
         <div class="footer">
-            <button type="submit">SIGN UP!</button>
+            <button type="submit">Create Account</button>
             <p>
                 already have an account? <a href="google.com">Log-in</a>
             </p>

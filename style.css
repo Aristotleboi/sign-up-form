@@ -3,20 +3,180 @@ html {
     background-size: cover;
     color: lightgrey;
     display: block;
+    background-position: center left 125px;
+    font-family: 'Lato', sans-serif;
 }
 
 #logo {
-    height: 60px;
+    height: 90px;
 }
 
 body {
     display: flex;
     flex-direction: row-reverse;
     height: 100%;
+    margin: 0;
+}
+
+.form-body {
+    display: flex;
+    background-color: rgb(241, 239, 234);
+    width: auto;
+    height: 100vh;
+    flex-direction: column;
+    flex: 1;
+}
+
+.footer {
+    margin-bottom: auto;
+    padding-left: 75px;
+    color: black;
+    font-size: 1.3em;
+}
+
+.form {
+    background-color: white;
+    color: black;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+
+.form-header {
+    padding-right: 175px;
+    padding-top: 70px;
+    padding-left: 75px;
+    color: black;
+    font-size: 1.3em;
+
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 75px;
+    font-size: 12px;
+    color: rgb(44, 44, 44);
+    font-family: sans-serif;
+    font-weight: 400;
+}
+
+form > * {
+    flex: 0 0 50%;'s;
+}
+
+input {
+    width: 20em;
+    border: solid 1px rgb(233, 233, 233);
+    border-radius: 3px;
+}
+
+input:focus-visible {
+    border: solid 1px rgb(49, 98, 206);
+    outline: none;
+}
+
+input:invalid {
+    border-color: red;
+}
+
+.first {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 5px;
+}
+
+#last-name {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 5px;
+}
+
+#email {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 5px;
+}
+
+#phone {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 5px;
+}
+
+#password {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 5px;
+}
+
+#passconfirm {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 5px;
+}
+
+.form p {
+    padding-left: 75px;
+    font-size: 1.3em;
+    margin-top: 13px;
+    margin-bottom: 13px;
+}
+
+.header-cred {
+    display: flex;
+    flex-direction: column;
+    width: 34vw;
+    margin-top: 25vh;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .header {
+    background-color: rgba(0, 0, 0, 0.9);
+    width: 100%;
     display: flex;
-    width: 50vw;
-    margin: 10px;
+    align-items: center;
+    justify-content: center;
+    height: 120px;
+}
+
+h1 {
+    font-size: 55px;
+}
+
+#photo-credit {
+    font-size: 12px;
+    color: white;
+    padding-bottom: 15px;
+}
+
+a {
+    color: white;
+}
+
+button {
+    color: white;
+    background-color: rgb(31, 74, 82);
+    font-size: 18px;
+    padding: 8px 40px;
+    border-radius: 6px;
+    border: 0;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+
+.footer a {
+    color: rgb(31, 74, 82);
+}
+
+.footer p {
+    margin-top: 30px;
 }
